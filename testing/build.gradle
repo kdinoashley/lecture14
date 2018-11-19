@@ -1,0 +1,28 @@
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+
+    // Make test output nicer
+    id 'com.adarshr.test-logger' version '1.5.0'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main'
+        }
+    }
+    test {
+        java {
+            srcDir 'src/test'
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+}
