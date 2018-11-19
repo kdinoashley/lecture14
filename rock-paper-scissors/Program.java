@@ -1,4 +1,6 @@
 public class Program {
+    
+    if(p1 == p2) return Winner.DRAW;
 
     public static Winner determineWinner(HandShape p1, HandShape p2) {
         if(p1 == HandShape.ROCK) {
